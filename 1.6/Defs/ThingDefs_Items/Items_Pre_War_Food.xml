@@ -49,6 +49,9 @@
         <graphicData>
             <texPath>Things/Items/Meals/FCP_Blamco/FCP_Blamco_Extra_Cheezy_Flavor</texPath>
         </graphicData>
+        <statBases>
+            <Nutrition>0.75</Nutrition>
+        </statBases>
     </ThingDef>
 
     <!--_____ Cram _____-->
@@ -73,6 +76,22 @@
         <graphicData>
             <texPath>Things/Items/Meals/FCP_Cram/FCP_Cram_Low_Sodium</texPath>
         </graphicData>
+    </ThingDef>
+
+    <!-- Cram Family Size -->
+
+    <ThingDef ParentName="FCP_Food_Pre_War_Meals">
+        <defName>FCP_Food_Cram_Family_Size</defName>
+        <label>Cram family size</label>
+        <description>A large, family-sized can of Cram. This bulk packaging was marketed to pre-war families as an economical option for feeding multiple people. Contains significantly more of the processed meat product than standard cans, making it a valuable find in the wasteland.</description>
+        <graphicData>
+            <texPath>Things/Items/Meals/FCP_Cram/FCP_Cram_Family_Size</texPath>
+        </graphicData>
+        <statBases>
+            <MarketValue>50</MarketValue>
+            <Mass>0.7</Mass>
+            <Nutrition>1.8</Nutrition>
+        </statBases>
     </ThingDef>
 
     <!--_____ Dandy Boy Apples _____-->
@@ -235,6 +254,43 @@
         <graphicData>
             <texPath>Things/Items/Meals/FCP_Insta_Mash/FCP_Insta_Mash_And_Bacon</texPath>
         </graphicData>
+        <statBases>
+            <Nutrition>0.75</Nutrition>
+        </statBases>
+    </ThingDef>
+
+    <!--_____ Packaged Iguana Bits _____-->
+
+    <!-- Packaged Iguana Bits -->
+
+    <ThingDef ParentName="FCP_Food_Pre_War_Meals">
+        <defName>FCP_Food_Packaged_Iguana_Bits</defName>
+        <label>packaged iguana bits</label>
+        <description>Pre-packaged chunks of iguana meat, processed and preserved for long-term storage. A common protein source in the pre-war wasteland regions, this meat was hunted, processed, and sold as an exotic alternative to traditional meats. The heavy irradiation and chemical preservatives keep it edible centuries later.</description>
+        <graphicData>
+            <texPath>Things/Items/Meals/FCP_Packaged_Iguana_Bits</texPath>
+        </graphicData>
+        <statBases>
+            <MarketValue>24</MarketValue>
+            <Nutrition>0.75</Nutrition>
+        </statBases>
+    </ThingDef>
+
+    <!--_____ Crispy Squirrel Bits _____-->
+
+    <!-- Crispy Squirrel Bits -->
+
+    <ThingDef ParentName="FCP_Food_Pre_War_Meals">
+        <defName>FCP_Food_Crispy_Squirrel_Bits</defName>
+        <label>crispy squirrel bits</label>
+        <description>Fried and seasoned chunks of pre-war squirrel meat, packaged for convenient consumption. This low-cost protein option was marketed to budget-conscious consumers in rural areas before the war. The deep-frying process and heavy salting have preserved the meat surprisingly well, though the texture has become quite tough over the centuries.</description>
+        <graphicData>
+            <texPath>Things/Items/Meals/FCP_Crispy_Squirrel_Bits</texPath>
+        </graphicData>
+        <statBases>
+            <MarketValue>18</MarketValue>
+            <Nutrition>0.65</Nutrition>
+        </statBases>
     </ThingDef>
 
     <!--_____ Pork N Beans _____-->
@@ -272,6 +328,9 @@
         <graphicData>
             <texPath>Things/Items/Meals/FCP_Potato_Crisps/FCP_Potato_Crisps</texPath>
         </graphicData>
+        <statBases>
+            <Nutrition>0.5</Nutrition>
+        </statBases>
     </ThingDef>
 
     <!-- Potato Crisps Lightly Salted -->
@@ -279,10 +338,13 @@
     <ThingDef ParentName="FCP_Food_Pre_War_Meals">
         <defName>FCP_Food_Potato_Crisps_Lightly_Salted</defName>
         <label>Potato Crisps Lightly Salted</label>
-        <description>A tube of Spring Valley potato chips in lightly salted falvor. An iconic pre-war snack composed of thin potato slices salted and baked in oil. Due to their immense popularity before the war they’re still a common sight in the wasteland.</description>
+        <description>A tube of Spring Valley potato chips in lightly salted flavor. An iconic pre-war snack composed of thin potato slices salted and baked in oil. Due to their immense popularity before the war they're still a common sight in the wasteland.</description>
         <graphicData>
             <texPath>Things/Items/Meals/FCP_Potato_Crisps/FCP_Potato_Crisps_Lighty_Salted</texPath>
         </graphicData>
+        <statBases>
+            <Nutrition>0.5</Nutrition>
+        </statBases>
     </ThingDef>
 
     <!--_____ Salisbury Steak _____-->
@@ -329,7 +391,166 @@
             <texPath>Things/Items/Meals/FCP_Sugar_Bombs/FCP_Sugar_Bombs</texPath>
         </graphicData>
     </ThingDef>
+    <!-- Sugar Bombs Fun Size -->
 
+    <ThingDef ParentName="FCP_Food_Pre_War_Meals">
+        <defName>FCP_Food_Sugar_Bombs_Fun_Size</defName>
+        <label>Sugar Bombs fun size</label>
+        <description>A smaller, snack-sized package of Sugar Bombs cereal. These fun-sized portions were marketed as a convenient on-the-go breakfast option for busy pre-war Americans. Despite the reduced portion size, they still pack the same sugar-fueled punch.</description>
+        <graphicData>
+            <texPath>Things/Items/Meals/FCP_Sugar_Bombs/FCP_Sugar_Bombs_Fun_Size</texPath>
+        </graphicData>
+        <statBases>
+            <MarketValue>14</MarketValue>
+            <Nutrition>0.50</Nutrition>
+        </statBases>
+        <ingestible>
+            <joy>0.15</joy>
+            <joyKind>Gluttonous</joyKind>
+            <maxNumToIngestAtOnce>2</maxNumToIngestAtOnce>
+            <defaultNumToIngestAtOnce>2</defaultNumToIngestAtOnce>
+            <ingestSound>Meal_Eat</ingestSound>
+        </ingestible>
+    </ThingDef>
+
+    <!--_____ Bubblegum _____-->
+
+    <!-- Bubblegum -->
+
+    <ThingDef ParentName="FCP_Food_Pre_War_Meals">
+        <defName>FCP_Food_Bubblegum</defName>
+        <label>bubblegum</label>
+        <description>A small package of pre-war bubblegum. While not particularly nutritious, this sweet treat was a beloved confection before the war. The synthetic ingredients and heavy preservatives mean it's still chewable centuries later, though the flavor has become somewhat artificial.</description>
+        <graphicData>
+            <texPath>Things/Items/Meals/FCP_Bubblegum</texPath>
+        </graphicData>
+        <statBases>
+            <MarketValue>8</MarketValue>
+            <Nutrition>0.10</Nutrition>
+        </statBases>
+        <ingestible>
+            <joy>0.08</joy>
+            <joyKind>Gluttonous</joyKind>
+            <maxNumToIngestAtOnce>5</maxNumToIngestAtOnce>
+            <defaultNumToIngestAtOnce>5</defaultNumToIngestAtOnce>
+            <ingestSound>Meal_Eat</ingestSound>
+        </ingestible>
+    </ThingDef>
+
+    <!--_____ Canned Dog Food _____-->
+
+    <!-- Canned Dog Food -->
+
+    <ThingDef ParentName="FCP_Food_Pre_War_Meals">
+        <defName>FCP_Food_Canned_Dog_Food</defName>
+        <label>canned dog food</label>
+        <description>A tin can of pre-war dog food. While formulated for canine consumption, desperate wasteland survivors have found it to be technically edible. The meat by-products and fillers provide basic nutrition, though the taste leaves much to be desired.</description>
+        <graphicData>
+            <texPath>Things/Items/Meals/FCP_Canned_Dog_Food</texPath>
+        </graphicData>
+        <statBases>
+            <MarketValue>12</MarketValue>
+            <Nutrition>0.60</Nutrition>
+        </statBases>
+        <ingestible>
+            <preferability>RawBad</preferability>
+            <tasteThought>FCP_Ate_Pre_War_Food</tasteThought>
+        </ingestible>
+    </ThingDef>
+
+    <!--_____ Cotton Candy Bites _____-->
+
+    <!-- Cotton Candy Bites -->
+
+    <ThingDef ParentName="FCP_Food_Pre_War_Meals">
+        <defName>FCP_Food_Cotton_Candy_Bites</defName>
+        <label>cotton candy bites</label>
+        <description>Bite-sized nuggets of compressed cotton candy preserved in a sealed package. These carnival treats were a popular indulgence at pre-war fairs and amusement parks. The sheer amount of sugar and artificial coloring has kept them remarkably well-preserved, though they dissolve almost instantly when eaten.</description>
+        <graphicData>
+            <texPath>Things/Items/Meals/FCP_Cotton_Candy_Bites</texPath>
+        </graphicData>
+        <statBases>
+            <MarketValue>16</MarketValue>
+            <Nutrition>0.40</Nutrition>
+        </statBases>
+        <ingestible>
+            <joy>0.18</joy>
+            <joyKind>Gluttonous</joyKind>
+            <maxNumToIngestAtOnce>3</maxNumToIngestAtOnce>
+            <defaultNumToIngestAtOnce>3</defaultNumToIngestAtOnce>
+            <ingestSound>Meal_Eat</ingestSound>
+        </ingestible>
+    </ThingDef>
+
+    <!--_____ Perfectly Preserved Pie _____-->
+
+    <!-- Perfectly Preserved Pie -->
+
+    <ThingDef ParentName="FCP_Food_Pre_War_Meals">
+        <defName>FCP_Food_Perfectly_Preserved_Pie</defName>
+        <label>perfectly preserved pie</label>
+        <description>A remarkably well-preserved pre-war pie sealed in advanced packaging. The combination of preservatives, vacuum-sealing, and irradiation has kept this dessert in near-perfect condition for over two centuries. A rare and valuable find that provides both nutrition and a taste of pre-war luxury.</description>
+        <graphicData>
+            <texPath>Things/Items/Meals/FCP_Perfectly_Preserved_Pie</texPath>
+        </graphicData>
+        <statBases>
+            <MarketValue>45</MarketValue>
+            <Nutrition>0.95</Nutrition>
+        </statBases>
+        <ingestible>
+            <preferability>MealFine</preferability>
+            <joy>0.45</joy>
+            <joyKind>Gluttonous</joyKind>
+            <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+            <defaultNumToIngestAtOnce>1</defaultNumToIngestAtOnce>
+            <ingestSound>Meal_Eat</ingestSound>
+        </ingestible>
+    </ThingDef>
+
+    <!--_____ Potted Meat _____-->
+
+    <!-- Potted Meat -->
+
+    <ThingDef ParentName="FCP_Food_Pre_War_Meals">
+        <defName>FCP_Food_Potted_Meat</defName>
+        <label>potted meat</label>
+        <description>A small tin of potted meat product, a pre-war food staple made from mechanically separated meat scraps and spices pressed into a paste. While the ingredients were questionable even before the war, the heavy processing and preservatives ensure it remains edible. Not appetizing, but filling.</description>
+        <graphicData>
+            <texPath>Things/Items/Meals/FCP_Potted_Meat</texPath>
+        </graphicData>
+        <statBases>
+            <MarketValue>16</MarketValue>
+            <Nutrition>0.65</Nutrition>
+        </statBases>
+    </ThingDef>
+
+    <!--_____ Slocum's Joe Canned Coffee _____-->
+
+    <!-- Slocum's Joe Canned Coffee -->
+
+    <ThingDef ParentName="FCP_Food_Pre_War_Meals">
+        <defName>FCP_Food_Slocums_Joe_Canned_Coffee</defName>
+        <label>Slocum's Joe canned coffee</label>
+        <description>A pre-war canned coffee drink from the popular Slocum's Joe chain. This ready-to-drink coffee was a staple for busy pre-war workers. The high caffeine content and preservatives mean it still provides a significant energy boost centuries after production, though the flavor has become somewhat metallic.</description>
+        <graphicData>
+            <texPath>Things/Items/Meals/FCP_Slocums_Joe_Canned_Coffee</texPath>
+        </graphicData>
+        <statBases>
+            <MarketValue>18</MarketValue>
+            <Nutrition>0.35</Nutrition>
+        </statBases>
+        <ingestible>
+            <foodType>Fluid, Processed</foodType>
+            <joy>0.12</joy>
+            <joyKind>Chemical</joyKind>
+            <outcomeDoers>
+                <li Class="IngestionOutcomeDoer_GiveHediff">
+                    <hediffDef>GoJuiceHigh</hediffDef>
+                    <severity>0.10</severity>
+                </li>
+            </outcomeDoers>
+        </ingestible>
+    </ThingDef>
     <!--_____ Yum Yum Deviled Eggs _____-->
 
     <!-- Yum Yum Deviled Eggs -->
@@ -353,5 +574,139 @@
             <texPath>Things/Items/Meals/FCP_Yum_Yum_Deviled_Eggs/FCP_Yum_Yum_Deviled_Eggs_Sour_Cream_Flavor</texPath>
         </graphicData>
     </ThingDef>
+    <!--_____ Slocum's BuzzBites _____-->
 
+    <!-- Slocum's BuzzBites Donut -->
+
+    <ThingDef ParentName="FCP_Food_Pre_War_Meals">
+        <defName>FCP_Food_Slocums_BuzzBites_Donut</defName>
+        <label>Slocum's BuzzBites donut</label>
+        <description>A pre-war fried dough confection from Slocum's BuzzBites. These ring-shaped treats are glazed with sugar and packed with enough preservatives to remain edible centuries after production. A sweet taste of pre-war indulgence that provides a quick burst of energy.</description>
+        <graphicData>
+            <texPath>Things/Items/Meals/FCP_Slocums_BuzzBites_Donut</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>22</MarketValue>
+            <Nutrition>0.72</Nutrition>
+        </statBases>
+        <ingestible>
+            <joy>0.28</joy>
+            <joyKind>Gluttonous</joyKind>
+            <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+            <defaultNumToIngestAtOnce>1</defaultNumToIngestAtOnce>
+            <ingestSound>Meal_Eat</ingestSound>
+        </ingestible>
+    </ThingDef>
+
+    <!--_____ Slocum's BuzzBites Boxes _____-->
+
+    <!-- Slocum's BuzzBites Box -->
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>FCP_Slocums_BuzzBites_Box</defName>
+        <label>Slocum's BuzzBites box</label>
+        <description>A sealed box of Slocum's BuzzBites donuts. These pre-war packages were a staple of American breakfast culture, found in every convenience store and coffee shop. The hermetically sealed packaging has kept the contents remarkably fresh. Opening it will reveal an assortment of classic donuts.</description>
+        <graphicData>
+            <texPath>Things/Items/Meals/FCP_Slocums_BuzzBites_Box</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <drawSize>.75</drawSize>
+        </graphicData>
+        <size>(1,1)</size>
+        <resourceReadoutPriority>Middle</resourceReadoutPriority>
+        <soundInteract>Standard_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+        <stackLimit>10</stackLimit>
+        <useHitPoints>true</useHitPoints>
+        <statBases>
+            <MarketValue>80</MarketValue>
+            <MaxHitPoints>50</MaxHitPoints>
+            <Mass>0.8</Mass>
+            <Flammability>0.8</Flammability>
+        </statBases>
+        <thingCategories>
+            <li>ItemsMisc</li>
+        </thingCategories>
+        <drawGUIOverlay>true</drawGUIOverlay>
+        <tradeability>Sellable</tradeability>
+        <techLevel>Industrial</techLevel>
+        <comps>
+            <li Class="CompProperties_Usable">
+                <useJob>UseItem</useJob>
+                <useLabel>Open {0}</useLabel>
+            </li>
+            <li Class="FCP.Core.CompProperties_UseEffectItemBox">
+                <numWeightedDrops>2</numWeightedDrops>
+                <guaranteedDrops>
+                    <li>
+                        <thingDef>FCP_Food_Slocums_BuzzBites_Donut</thingDef>
+                        <countRange>2~3</countRange>
+                    </li>
+                </guaranteedDrops>
+                <weightedDrops>
+                    <li>
+                        <thingDef>FCP_Food_Slocums_BuzzBites_Donut</thingDef>
+                        <countRange>1~3</countRange>
+                    </li>
+                </weightedDrops>
+            </li>
+            <li Class="CompProperties_UseEffectDestroySelf"/>
+        </comps>
+    </ThingDef>
+
+    <!-- Slocum's BuzzBites Party Box -->
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>FCP_Slocums_BuzzBites_Party_Box</defName>
+        <label>Slocum's BuzzBites party box</label>
+        <description>A large party-sized box of Slocum's BuzzBites donuts. These bulk packages were marketed for office meetings, birthday parties, and other social gatherings in pre-war America. The extra-large hermetically sealed packaging contains a generous assortment of premium donuts. A rare find that promises a significant haul of sweet treats.</description>
+        <graphicData>
+            <texPath>Things/Items/Meals/FCP_Slocums_BuzzBites_Party_Box</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <drawSize>1.0</drawSize>
+        </graphicData>
+        <size>(1,1)</size>
+        <resourceReadoutPriority>Middle</resourceReadoutPriority>
+        <soundInteract>Standard_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+        <stackLimit>5</stackLimit>
+        <useHitPoints>true</useHitPoints>
+        <statBases>
+            <MarketValue>220</MarketValue>
+            <MaxHitPoints>60</MaxHitPoints>
+            <Mass>2.0</Mass>
+            <Flammability>0.8</Flammability>
+        </statBases>
+        <thingCategories>
+            <li>ItemsMisc</li>
+        </thingCategories>
+        <drawGUIOverlay>true</drawGUIOverlay>
+        <tradeability>Sellable</tradeability>
+        <techLevel>Industrial</techLevel>
+        <comps>
+            <li Class="CompProperties_Usable">
+                <useJob>UseItem</useJob>
+                <useLabel>Open {0}</useLabel>
+            </li>
+            <li Class="FCP.Core.CompProperties_UseEffectItemBox">
+                <numWeightedDrops>5</numWeightedDrops>
+                <guaranteedDrops>
+                    <li>
+                        <thingDef>FCP_Food_Slocums_BuzzBites_Donut</thingDef>
+                        <countRange>6~9</countRange>
+                    </li>
+                </guaranteedDrops>
+                <weightedDrops>
+                    <li>
+                        <thingDef>FCP_Food_Slocums_BuzzBites_Donut</thingDef>
+                        <countRange>2~4</countRange>
+                    </li>
+                </weightedDrops>
+            </li>
+            <li Class="CompProperties_UseEffectDestroySelf"/>
+            <li Class="FCP.Core.CompProperties_LabelColored">
+                <rarity>Rare</rarity>
+            </li>
+        </comps>
+    </ThingDef>
 </Defs>
